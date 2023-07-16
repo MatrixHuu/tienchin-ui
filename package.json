@@ -1,8 +1,8 @@
 {
-  "name": "ruoyi",
+  "name": "tienchin-ui",
   "version": "3.8.6",
-  "description": "若依管理系统",
-  "author": "若依",
+  "description": "TienChin健身管理系统",
+  "author": "xyma",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
