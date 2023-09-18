@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 
-// 查询渠道列表
+// 查询角色列表
 export function listChannel(query) {
     return request({
         url: '/tienchin/channel/list',
@@ -9,7 +9,7 @@ export function listChannel(query) {
     })
 }
 
-// 查询渠道详细
+// 查询角色详细
 export function getChannel(channelId) {
     return request({
         url: '/tienchin/channel/' + channelId,
@@ -17,31 +17,28 @@ export function getChannel(channelId) {
     })
 }
 
-// 新增渠道
+// 新增角色
 export function addChannel(data) {
     return request({
-        url: '/tienchin/channel/create',
+        url: '/tienchin/channel',
         method: 'post',
         data: data
     })
 }
 
-// 修改渠道
+// 修改角色
 export function updateChannel(data) {
     return request({
-        url: '/tienchin/channel/update',
+        url: '/tienchin/channel',
         method: 'put',
         data: data
     })
 }
 
-
-// 删除渠道
+// 删除角色
 export function delChannel(channelId) {
     return request({
         url: '/tienchin/channel/' + channelId,
         method: 'delete'
     })
 }
-
-
